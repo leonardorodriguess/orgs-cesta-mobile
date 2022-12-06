@@ -6,6 +6,8 @@ import {
   Montserrat_400Regular_Italic
 } from '@expo-google-fonts/montserrat';
 
+import AppLoading from 'expo-app-loading';
+
 import Cesta from './src/pages/Cesta';
 import mock from './src/mocks/cesta';
 
@@ -17,7 +19,7 @@ export default function App() {
   });
 
   if(!fonteCarregada){
-    return <View />
+    return <AppLoading />
   }
 
   return (
